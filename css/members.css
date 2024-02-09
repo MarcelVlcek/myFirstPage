@@ -1,0 +1,83 @@
+
+
+
+table{
+    margin: 40px auto;
+    width:90%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 14px;
+    
+}
+
+
+th{
+    text-align: left;
+    padding: 0.7rem;
+    padding-left: 0.5rem;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+td{
+    padding: 0.5rem;
+    font-size: 14px;
+    color: #34495e;
+}
+
+
+th{
+   background:#ebeb58; 
+   color: rgb(37, 36, 36);
+}
+
+th:nth-child(1){
+    border-radius: 5px 0 0 0;
+}
+th:nth-child(5){
+    border-radius: 0 5px 0 0;
+}
+
+tr{
+    background: #dde7f1;
+}
+
+tr:nth-of-type(2n) {
+    background: white;
+}
+
+
+@media (max-width:526px){
+    th{
+        display: none;
+        
+    }
+
+    td{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 15ch auto;
+        grid-template-columns: 15ch auto;
+        text-align: center;
+    }
+
+    td::before {
+        content: attr(data-cell) ":";
+        text-transform: capitalize;
+        font-weight: bolder;
+        color: black;
+    }
+
+    td:first-child{
+        padding-top: 1rem;
+    }
+
+    td:last-child{
+        padding-bottom: 1rem;
+    }
+}
+
+td.meno{
+    font-style: italic;
+}

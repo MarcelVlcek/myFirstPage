@@ -1,0 +1,134 @@
+
+
+.aktual{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1200px;
+  margin-bottom: 120px;
+
+}
+.card-holder{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 15px;
+  
+}
+
+.card{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;  
+  width: 20rem;
+  color: #34495e;
+  background-color: #fff;
+  margin: 0.5rem auto;
+  text-align:left;
+  min-height: 460px;
+  
+}
+
+.card__name{
+  font-size: 18px;
+  text-align: center;
+  color: #4e9de7;
+  margin: 5px;
+}
+
+.card__img{
+  margin-top: 15px;  
+  width: 90%;
+  height: 12rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-contents{
+  padding: 1rem;
+  
+}
+
+
+
+.card__read-more{
+  display: block;
+  opacity: 0;
+  height: 0;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.card__read-more--open{
+  display: block;
+  opacity: 1;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.read-more-btn{
+  display: inline-block;
+  background-color: #eee;
+  padding: 0.5rem 1.2rem;
+  font-size: 1em;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.read-more-btn:hover{
+  background-color: coral;
+  -webkit-box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+          box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+  -webkit-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+
+
+@media (max-width:526px){
+.card{
+  min-height: 400px;
+}
+
+ 
+ .card-contents{
+  font-size: 12px;
+ } 
+
+ .aktual{
+  margin-bottom: 20px;
+ }
+
+}

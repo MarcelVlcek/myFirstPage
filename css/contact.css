@@ -1,0 +1,159 @@
+
+
+body{
+    
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    
+
+}
+
+
+
+.contact-wrapper{
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+   
+    
+}
+
+.contact-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #34495e;
+    margin: 50px 0;
+    padding:40px 0px;
+    width: 430px;
+   
+    
+}
+
+
+.contact-info a{
+   color: #34495e;
+   margin-top: 5px;
+   text-decoration: none;
+
+}
+
+.contact-info h3{
+    margin: 0px;
+}
+
+
+.fa-location-dot,
+.fa-envelope,
+.fa-phone{
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+
+
+.sidlo,
+.mail,
+.cislo{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.map{
+    width: 350px;
+    height: 300px;
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width:1024px){
+
+}
+
+@media (max-width:768px){
+    .contact-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .contact-info{
+        margin: 0;
+        padding-bottom: 0px;
+    }
+
+    .map{
+        margin-bottom: 50px;
+        
+    }
+
+   
+}
+
+@media (max-width:526px){
+    .contact-info{
+        width: 300px;
+        height: 280px;
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 12px
+    }
+
+    .contact-descrip{
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+    .fa-location-dot,
+    .fa-envelope,
+    .fa-phone{
+        font-size: 18px;
+        margin-right: 20px;
+    }
+
+    .map{
+        width: 250px;
+        height: 200px;
+    }
+
+}
+
+
+
+
+
