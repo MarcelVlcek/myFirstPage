@@ -5,7 +5,7 @@ $(document).ready(function() {
  * BACKGROUND COVER    
  */
 
-    var covers = $('.fadecovers');
+    let covers = $('.fadecovers');
 
     covers.children(':not(:last)').hide();
 
@@ -16,66 +16,6 @@ $(document).ready(function() {
         }).prev().fadeIn(6000);
     }, 3000);
 
-
-/*
-  /*
-    * BACK TO TOP 
-    */
-  document.addEventListener('DOMContentLoaded', function() {
-  var backToTop = document.createElement('a');
-  backToTop.href = '#home';
-  backToTop.className = 'back-to-top';
-
-  var arrowIcon = document.createElement('i');
-  arrowIcon.className = 'fa-solid fa-circle-arrow-up fa-3x';
-  
-  backToTop.appendChild(arrowIcon);
-
-  backToTop.style.display = 'none';
-  document.body.appendChild(backToTop);
-
-  backToTop.addEventListener('click', function() {
-      scrollToTop();
-  });
-
-  window.addEventListener('scroll', function() {
-      if (window.scrollY >= 100) {
-          fadeIn(backToTop);
-      } else {
-          hide(backToTop);
-      }
-  });
-
-  function scrollToTop() {
-      window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-      });
-  }
-
-  function fadeIn(element) {
-      element.style.display = 'block';
-  }
-
-  function hide(element) {
-      element.style.display = 'none';
-  }
-
-});
-    
-/*
- * NAVIGATION ACTIVE
- */
-
-
-document.querySelectorAll('.nav-link').forEach
-(link => {
-    if(link.href == window.location.href){
-        link.setAttribute('aria-current', 'page')
-    }
-
-    
-})
 
 
 /*
@@ -96,10 +36,6 @@ toggleBtn.onclick = function () {
 }
 
 })        
-
-
-
-
 
 
 
